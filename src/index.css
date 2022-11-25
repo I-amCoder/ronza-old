@@ -1,13 +1,148 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.header{
+    background-image: linear-gradient(to bottom, rgba(15, 8, 14, 0.311) 0%, rgba(10, 10, 10, 0.8) 100%),url('/src/assets/jun.jpg');
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    
+
+    
+}
+.hero-section{
+  margin-top: 10rem;
+}
+.hero-text{
+    color: whitesmoke;  
+}
+.hero-btn{
+  width: 250px;
+  border-radius: 40px;
+  line-height: 14px;
+  padding: 1rem;
+  
+  background-color: #fff;
+  border: none;
+  color: var(--dark);
+}
+.hero-btn:hover{
+  background-color: #ddd;
+  color: var(--dark);
+}
+.hero-btn{
+  background-color: #ddd;
+  color: var(--dark);
+}
+.feature-section{
+  margin-top: 1rem;
+  padding: 1rem;
+}
+.single-feature{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.feature-image{
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+}
+.feature-text h3,.feature-text p{
+  text-align: center;
+}
+.product-section{
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+  color: white;
+  /* background: linear-gradient(180deg,#373795 0,#1e90bb); */
+  background: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.product-image{
+  width: 90%;
+  /* height: 90%; */
+  padding: 3rem;
+}
+.product-details{
+  margin-top: 3rem;
+}
+.single-product-feature{
+  display: flex;
+  flex-direction: row;
+}
+.product-img-sm{
+  width: 100px;
+  height: 100px;
+  padding: 4px;
+  border: 2px solid white;
+  border-radius: 100%;
+  
+}
+
+.carousel-card{
+  border: none !important;
+}
+.logo-image{
+  width: 100%;
+}
+.underline{
+  display: inline-block;
+}
+.underline::after{
+  content: "";
+  display: block;
+  width: 30%;
+  padding-top: 3px;
+  border-bottom: 4px solid #f9dd94;
+  
+}
+/* .logo-text{
+  font-size: 4rem;
+  font-weight: bold;
+  color: #c471f5;  
+} */
+footer{
+  background-color: #c471f5;
+  padding: 2rem;
+}
+.footer h2{
+  color: white;
+  font-size: 2rem;
+}
+.footer .icon{
+  margin-right: 1rem;
+  color: white;
+}
+.footer .nav-link{
+  display: flex ;
+  align-items: center;
+  margin: 1rem 0;
+}
+.icon-row a{
+  margin: 0 .5rem;
+  font-size: 1.5rem;
+}
+.facebook{
+  color: #4267B2;
+}
+.youtube{
+  color: #FF0000;
+}
+.instagram{
+  color: #8a3ab9;
+}
+.twitter{
+  color: #1DA1F2;
+}
+/* Landscape tablets and medium desktops */
+@media (max-width: 1199px) {
+  .product-image{
+    margin-bottom: 3rem;
+  }
+  .img-col{
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  .product-feature-text {
+    text-align: center;
+  }
 }
