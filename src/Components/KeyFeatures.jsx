@@ -2,7 +2,7 @@ import React from "react";
 
 const KeyFeatures = () => {
   return (
-    <section className="feature-section my-4">
+    <section className="feature-section ">
       <div className="container">
         <div className="row justify-content-between">
           <div className="col-md-2 single-feature ">

@@ -1,5 +1,6 @@
 import React from "react";
 import AppNav from "./Components/AppNav";
+import ContactUs from "./Components/ContactUs";
 import Footer from "./Components/Footer";
 import Hero from "./Components/Hero";
 import KeyFeatures from "./Components/KeyFeatures";
@@ -17,6 +18,7 @@ const App = () => {
       <KeyFeatures></KeyFeatures>
       <SingleProduct></SingleProduct>
       <ProductCarousel></ProductCarousel>
+      <ContactUs />
       <SocialSection></SocialSection>
       <Footer />
     </>
