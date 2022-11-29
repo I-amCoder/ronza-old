@@ -28,13 +28,13 @@ const ProductCarousel = ({ images }) => {
       <section className="carousel-section my-5">
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-lg-4 text-center">
+            <div className="col-12 text-center">
               {/* <img className="logo-image shadow " src={image} alt="logo" />
               <p className="mt-2 fw-bold ">
                 Slogun line Lorem, ipsum dolor. Lorem ipsum dolor sit amet
                 consectetur adipisicing elit. Error, laboriosam.
               </p> */}
-              <p className="my-4 h5 fw-bold underline">
+              <p className="my-4 carousel-title fw-bold underline">
                 Checkout Our latest products here
               </p>
             </div>
@@ -44,7 +44,7 @@ const ProductCarousel = ({ images }) => {
               <Carousel
                 autoPlay
                 autoPlaySpeed={3000}
-                showDots
+                // showDots
                 removeArrowOnDeviceType={["tablet", "mobile"]}
                 infinite
                 responsive={responsive}
@@ -77,8 +77,8 @@ const ProductCarousel = ({ images }) => {
           <div className="row  text-center justify-content-center">
             {images.slice(3, 6).map((image, index) => {
               return (
-                <div key={index} className="col-md-4">
-                  <div className="card feature-product-card">
+                <div key={index} className="col-md-4 mb-4">
+                  <div className="card shadow feature-product-card">
                     <img
                       className="card-img"
                       src={image.urls.small}
@@ -92,7 +92,7 @@ const ProductCarousel = ({ images }) => {
                         Emilia-Romagna Region, Italy
                       </h6>
                       <div className="text-center">
-                        <a href="#" className="btn btn-warning ">
+                        <a href="#" className="btn btn-warning buy-now-btn">
                           Buy Now
                         </a>
                       </div>

@@ -1,6 +1,6 @@
 .header{
     background-image: linear-gradient(to bottom, rgba(15, 8, 14, 0.642) 0%, rgba(10, 10, 10, 0.8) 100%),url('/src/assets/jun.jpg');
-    height: 100vh;
+    height: 80vh;
     background-size: cover;
     background-position: center;
     
@@ -10,7 +10,7 @@
   padding: 1rem 0;
 } */
 .carousel-image{
-  height: 100vh;
+  height: 80vh;
   filter: brightness(60%);
   object-fit: cover;
 }
@@ -21,7 +21,34 @@
 .nav-link-item{
   font-weight: bold ;
   color: black ;
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+  color: black;
+  /* letter-spacing: .1rem; */
 }
+
+.carousel-title{
+  font-size: 2.5rem;
+}
+.nav-link-item:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #f9dd94;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav-link-item:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 .nav-logo{
   font-family: chiller;
   font-weight: bolder;
@@ -50,6 +77,7 @@
   background-color: #ddd;
   color: var(--dark);
 }
+
 
 .feature-section{
   margin-top: 4rem;
@@ -122,6 +150,7 @@
 .feature-product-card{
   border: none;
   /* transition: 1s all; */
+  
 }
 .feature-product-card h1,h6{
   color: white;
@@ -133,6 +162,7 @@
   object-fit: cover;
   filter: brightness(40%);
   transition: .5s ease-in-out;
+  border-radius: 0;
 }
 .feature-product-card:hover img{
   height: 400px;
@@ -283,10 +313,16 @@ footer{
   .carousel-image{
     height: 40vh;
   }
+
 }
 @media only screen and (max-width: 425px){
 /*Small smartphones [325px -> 425px]*/
 .carousel-image,.header{
   height: 40vh;
+  
 }
+.carousel-title{
+  font-size: 1rem;
+}
+
 }

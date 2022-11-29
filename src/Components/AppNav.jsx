@@ -38,7 +38,7 @@ const AppNav = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav ">
             <Nav className="mx-auto nav-container">
-              <Nav.Link className="nav-link-item" href="#home">
+              <Nav.Link className="nav-link-item " href="#home">
                 Home
               </Nav.Link>
               <Nav.Link className="nav-link-item" href="#link">
