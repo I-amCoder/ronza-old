@@ -11,6 +11,7 @@ const Hero = () => {
   }, []);
 
   const loadImages = () => {
+    console.log("fetching");
     fetch(
       "https://api.unsplash.com/photos/?client_id=B3eNrrOIeBFdr9pohQqaEPSXOYfuX-hacP2cNBcKY4s"
     )
