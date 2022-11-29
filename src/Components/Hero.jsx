@@ -2,24 +2,24 @@ import Carousel from "react-bootstrap/Carousel";
 
 import React, { useEffect, useState } from "react";
 
-const Hero = () => {
-  const [images, setImages] = useState([]);
-  useEffect(() => {
-    return () => {
-      loadImages();
-    };
-  }, []);
+const Hero = ({ images }) => {
+  // const [images, setImages] = useState([]);
+  // useEffect(() => {
+  //   return () => {
+  //     loadImages();
+  //   };
+  // }, []);
 
-  const loadImages = () => {
-    console.log("fetching");
-    fetch(
-      "https://api.unsplash.com/photos/?client_id=B3eNrrOIeBFdr9pohQqaEPSXOYfuX-hacP2cNBcKY4s"
-    )
-      .then((res) => res.json())
-      .then((data) => {
-        setImages(data);
-      });
-  };
+  // const loadImages = () => {
+  //   console.log("fetching");
+  //   fetch(
+  //     "https://api.unsplash.com/photos/?client_id=B3eNrrOIeBFdr9pohQqaEPSXOYfuX-hacP2cNBcKY4s"
+  //   )
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       setImages(data);
+  //     });
+  // };
 
   return (
     <Carousel fade>
