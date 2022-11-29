@@ -140,6 +140,9 @@
   transform: scale(1.1);
 
 }
+.discounted-price{
+  text-decoration: line-through;
+}
 
 .react-multiple-carousel__arrow--right {
   right: 0 !important;
@@ -199,7 +202,7 @@
   color: #c471f5;  
 } */
 footer{
-  background-color: #c471f5;
+  background-color: #141111;
   padding: 2rem;
 }
 .footer h2{
@@ -287,12 +290,6 @@ footer{
   background-color: #333333;
   color: white;
 }
-
-
-
-
-
-
 /* Landscape tablets and medium desktops */
 @media (max-width: 1199px) {
 
