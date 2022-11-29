@@ -5,12 +5,13 @@
     background-position: center;
     
 }
-.c-caption{
+/* .c-caption{
   background-color: #33333384;
   padding: 1rem 0;
-}
+} */
 .carousel-image{
   height: 100vh;
+  filter: brightness(60%);
   object-fit: cover;
 }
 .nav-container{

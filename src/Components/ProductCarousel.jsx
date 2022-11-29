@@ -71,8 +71,8 @@ const ProductCarousel = ({ images }) => {
           </div>
         </div>
       </section>
-      <section className="featured-products">
-        <h1 className="text-center">Featured Products</h1>
+      <section className="featured-products my-5">
+        <h1 className="text-center my-4">Featured Products</h1>
         <div className="container">
           <div className="row  text-center justify-content-center">
             {images.slice(3, 6).map((image, index) => {
@@ -85,7 +85,9 @@ const ProductCarousel = ({ images }) => {
                       alt="Bologna"
                     />
                     <div className="card-img-overlay text-white d-flex flex-column justify-content-center">
-                      <h1 className="card-title">Bologna</h1>
+                      <h1 className="card-title">
+                        {image.description || "no description"}
+                      </h1>
                       <h6 className="card-subtitle mb-2">
                         Emilia-Romagna Region, Italy
                       </h6>
