@@ -16,7 +16,7 @@ const App = () => {
   }, []);
 
   const loadImages = () => {
-    alert("fetching");
+    // alert("fetching");
     // console.log("fetching");
     // fetch(data)
     //   .then((res) => res.json())
@@ -40,7 +40,7 @@ const App = () => {
         images={images.slice(2, 7)}
         title={"Limited Sale"}
       ></ProductCarousel>
-      {/* <ContactUs /> */}
+      <ContactUs />
       <SocialSection></SocialSection>
       <Footer />
     </>

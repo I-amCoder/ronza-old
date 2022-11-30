@@ -30,7 +30,7 @@ const Hero = ({ images }) => {
           <Carousel.Item key={index}>
             <img
               className="d-block w-100 carousel-image"
-              src={urls.small}
+              src={urls.regular}
               alt="First slide"
             />
             <Carousel.Caption>
