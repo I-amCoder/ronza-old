@@ -16,6 +16,7 @@ const App = () => {
   }, []);
 
   const loadImages = () => {
+    alert("fetching");
     // console.log("fetching");
     // fetch(data)
     //   .then((res) => res.json())
