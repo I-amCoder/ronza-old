@@ -6,6 +6,7 @@ import Hero from "./Components/Hero";
 import ProductCarousel from "./Components/ProductCarousel";
 import SocialSection from "./Components/SocialSection";
 import data from "./assets/data.json";
+import ContactUs from "./Components/ContactUs";
 const App = () => {
   const [images, setImages] = useState([]);
   useEffect(() => {
@@ -38,6 +39,7 @@ const App = () => {
         images={images.slice(2, 7)}
         title={"Limited Sale"}
       ></ProductCarousel>
+      {/* <ContactUs /> */}
       <SocialSection></SocialSection>
       <Footer />
     </>

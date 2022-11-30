@@ -234,30 +234,16 @@ footer{
 .twitter{
   color: #1DA1F2;
 }
-.contact-section{
-  background-color: #c471f5;
+.image-col{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.contact-image{
-  max-width: 100%;
-  vertical-align: middle;
+.contact-col{
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
 }
-.contact-input{
-  display: block;
-  margin: 1rem 0;
-  font-weight: bold;
-  width: 100%;
-  background: #e6e6e6;
-  font-size: 15px;
-  line-height: 1.5;
-  padding: 1rem;
-  border: none;
-  border-radius: 23px;
-  color: #666666;
-  /* transition: 300ms ease-out; */
-
-}
-
-
 .shadow-input {
   content: '';
   display: block;
@@ -271,6 +257,12 @@ footer{
   color: rgba(87,184,70, 0.5);
 }
 
+.contact-image{
+  width: 100%;
+  object-fit: cover;
+  height: 700px;
+  filter: brightness(50%);
+}
 .contact-btn{
   background-color: #57b846;
   color: whitesmoke;
@@ -289,6 +281,18 @@ footer{
 .contact-btn:active:hover {
   background-color: #333333;
   color: white;
+}
+.contact-input{
+  padding: 1rem;
+  border-radius: 0;
+  font-weight: bold;
+}
+.contact-input:focus{
+  padding: 1rem;
+  outline: none;
+  border-radius: 0;
+  border-color: 1px solid #57b846;
+  font-weight: bold;
 }
 /* Landscape tablets and medium desktops */
 @media (max-width: 1199px) {
