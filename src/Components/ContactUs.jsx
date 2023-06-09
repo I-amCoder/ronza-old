@@ -1,8 +1,9 @@
 import React from "react";
 import mailImage from "../assets/contact-mail.png";
 import image from "../assets/contact-bg.jpg";
-import { BsEnvelope, BsMarkdown } from "react-icons/bs";
+import { BsEnvelope } from "react-icons/bs";
 import { GoLocation } from "react-icons/go";
+import Skeleton from "react-loading-skeleton";
 
 const ContactUs = () => {
   return (

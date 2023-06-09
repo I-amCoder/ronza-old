@@ -1,5 +1,5 @@
 import React from "react";
-
+    
 const FeaturedProducts = ({ images }) => {
   return (
     <section className="featured-products my-5">

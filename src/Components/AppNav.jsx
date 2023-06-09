@@ -2,8 +2,9 @@ import React, { useEffect, useRef, useState } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import Skeleton from "react-loading-skeleton";
 
-const AppNav = () => {
+const AppNav = ({ loading, data }) => {
   const [navBackground, setNavBackground] = useState(false);
   const navRef = useRef();
   navRef.current = navBackground;
@@ -33,7 +34,13 @@ const AppNav = () => {
       >
         <Container>
           <Navbar.Brand href="#home">
-            <div className="nav-logo ">RONZA</div>
+            <div className="nav-logo ">
+              {loading ? (
+                <Skeleton width={100} height={30} baseColor="#ddd" />
+              ) : (
+                data.site_name
+              )}
+            </div>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav ">
